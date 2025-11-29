@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 100vw;
+			height: 100vh;
+			background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.card {
+			width: 350px;
+			height: 500px;
+			background-color: white;
+			border-radius: 20px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
+
+		.card img {
+			width: 100%;
+			height: 40%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+
+		.textBox {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+			width: 70%;
+			text-align: center;
+		}
+
+		#amountBox {
+			width: 80%;
+			height: 10%;
+			background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+			border-radius: 10px;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			align-items: center;
+		}
+
+		#paymentButton {
+			width: 80%;
+			height: 9%;
+			background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		}
+
+		.cancleBox a {
+			text-decoration: none;
+			padding-bottom: 3px;
+			font-weight: bold;
+			color: rgb(117, 103, 103);
+
+		}
+
+		.icon img {
+			width: 30px;
+			height: 30px;
+			border-radius: 10px;
+		}
+
+		.plan {
+			padding: 10px;
+		}
+
+		.change a {
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="card">
+			<img src="music1.avif">
+
+			<div class="textBox">
+				<h2>
+					Order Summary
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.
+				</p>
+			</div>
+
+			<div id="amountBox">
+				<div class="icon">
+					<img src="music-icon.avif">
+				</div>
+				<div class="plan">
+					<p><strong>Annual Plan</strong></p>
+					<p>$99.9/year</p>
+				</div>
+				<div class="change">
+					<a href="#">Change</a>
+				</div>
+			</div>
+
+			<button id="paymentButton">
+				Proceed to Payment
+			</button>
+
+			<div class="cancleBox">
+				<a href="#">Cancel Order</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
